@@ -14,4 +14,8 @@ AppDataSource.initialize()
     throw new Error(`Error initializing Data source: ${err}`);
   });
 
+server.post('/api/v1/users/auth/signup', (req, res) => {
+  res.send();
+});
+
 export default server;

@@ -1,6 +1,7 @@
 import { DataSource } from 'typeorm';
 
 import { PGSQL_DB, PGSQL_PASSWORD, PGSQL_USER } from '@utils/variables';
+import { User } from '@models';
 
 const AppDataSource = new DataSource({
   type: 'postgres',
@@ -9,7 +10,7 @@ const AppDataSource = new DataSource({
   username: PGSQL_USER,
   password: PGSQL_PASSWORD,
   database: PGSQL_DB,
-  entities: [],
+  entities: [User],
   synchronize: true,
 });
 
