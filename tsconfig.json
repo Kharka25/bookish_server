@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "lib": ["DOM", "ES6", "ES2017", "ESNext.AsyncIterable"],
+    "target": "ES2016",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": ".",
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "paths": {
+      "@config/*": ["./src/config/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@db": ["./src/db"],
+      "@entities": ["./src/entities"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@models/*": ["./src/models/*"],
+      "@routers": ["./src/routers"],
+      "@types": ["./src/types"],
+      "@utils/*": ["./src/utils/*"]
+    }
+  }
+  // "exclude": ["node_modules"],
+  // "include": ["./src/**/*.tsx", "./src/**/*/ts"]
+}
